@@ -7,7 +7,9 @@ const BASE_URL = "http://localhost:8080";
 export const options = {
   noConnectionReuse: true,
   insecureSkipTLSVerify: false,
-  // this stage will ramp up from 1 to 10 VUs over 10 seconds, then stay at 10 VUs for 20 seconds, and finally ramp down to 0 VUs over 10 seconds.
+  // this stage will ramp up from 1 to 10 VUs over 10 seconds,
+  // then ramp up from 10 VUs to 20 VUs for 20 seconds,
+  // then ramp down to 0 VUs over 10 seconds.
   stages: [
     { duration: "10s", target: 10 },
     { duration: "20s", target: 20 },
