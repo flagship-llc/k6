@@ -8,3 +8,6 @@ brew install k6
 k6 run yourFile.js
 
 k6 run -e YOUR_VAR=SOME_VALUE yourFile.js
+
+## Types of Test
+Spike - sudden massive request coming in
