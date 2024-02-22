@@ -10,6 +10,8 @@ k6 run yourFile.js
 k6 run -e YOUR_VAR=SOME_VALUE yourFile.js
 
 ## Types of Test
+Load: test under specific load
+
 Spike: sudden massive request coming in
 
 Break-point: unrealistic requests numbers
